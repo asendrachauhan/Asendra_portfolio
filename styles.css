@@ -889,23 +889,23 @@ h5 {
 } */
 .icon1{
   padding: 15px;
-  margin: 8px;
+  margin: 5px;
   color: #195cc8;
-  background-color: #e40b57;
+  background-color: hsl(323, 91%, 47%);
   border: 5px solid none;
   border-radius: 8px;
 }
 .icon2{
   padding: 15px;
-  margin: 8px;
+  margin: 5px;
   color: #195cc8;
   background-color: #031cfd;
-  border: 5px solid none;
+  border: 1px solid none;
   border-radius: 8px;
 }
 .icon3{
   padding: 15px;
-  margin: 8px;
+  margin: 5px;
   color: #195cc8;
   background-color: #0c90fc;
   border: 5px solid none;
@@ -921,7 +921,7 @@ h5 {
 }
 .icon5{
   padding: 15px;
-  margin: 8px;
+  margin: 5px;
   color: #195cc8;
   background-color: #858d96;
   border: 5px solid none;
