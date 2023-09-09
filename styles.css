@@ -86,14 +86,14 @@ span {
 
 .nav {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   align-items: center;
   justify-content: space-between;
   background-color: #828277;
   height: 65px;
   border: blue 3px solid;
   border-radius: 6px;
-  box-shadow: rgba(71, 217, 220, 0.963) 3px 3px 3px 3px;
+  box-shadow: rgba(71, 217, 220, 0.963) 2px 2px 2px 2px;
   font-size: 20px;
   padding-left: 8%;
   padding-right: 8%;
@@ -138,23 +138,22 @@ span {
 .menu-button::before,
 .menu-button::after {
   display: block;
-  /* background-color: white; */
-  background-color: #195cc8;
+  background-color: rgb(18, 66, 209); 
   position: absolute;
   height: 6px;
   width: 32px;
-  border-radius: 3px;
-  color: black;
+  border-radius: 4px;
+  color: rgb(0, 1, 8);
 }
 
 .menu-button::before {
   content: '';
-  margin-top: -8px;
+  margin-top: -9px;
 }
 
 .menu-button::after {
   content: '';
-  margin-top: 8px;
+  margin-top: 9px;
 }
 
 /*  Adding Functionality to the Hamburger Menu with CSS  */
@@ -165,7 +164,7 @@ span {
 }
 
 #menu-toggle:checked + .menu-button-container .menu-button {
-  background: rgba(255, 255, 255, 0);
+  background: rgba(233, 10, 10, 0);
 }
 
 #menu-toggle:checked + .menu-button-container .menu-button::after {
@@ -341,7 +340,7 @@ h3 {
 
 .about-text {
   width: 550px;
-  text-align: center;
+  text-align: justify;
   margin: 10px;
 }
 
@@ -669,7 +668,7 @@ section .title {
 .service {
   background-color: rgb(232, 233, 227);
   width: 100%;
-  padding: 100px 0px;
+  padding: 10px 0px;
   height: 100vh;
 }
 
@@ -868,10 +867,10 @@ h5 {
 /* footer */
 
 #lab_social_icon_footer {
-  align-items: center;
-  justify-content: center;
-  background-color: #353434;
-  text-align: center;
+  /* align-items: center; */
+  /* justify-content: center; */
+   background-color: #353434; 
+   text-align: center; 
 }
 
 #lab_social_icon_footer .social {
@@ -881,7 +880,7 @@ h5 {
   
 }
 
-/* #lab_social_icon_footer :hover {
+ /*#lab_social_icon_footer:hover {
   transform: scale(1.2);
 } */
 /* .si.icon1:hover {
@@ -899,7 +898,7 @@ h5 {
   padding: 15px;
   margin: 5px;
   color: #195cc8;
-  background-color: #031cfd;
+  background-color: #167cda;
   border: 1px solid none;
   border-radius: 8px;
 }
@@ -1028,7 +1027,8 @@ h5 {
     padding: 0.5em 0;
     width: 100%;
     color: black;
-    background-color: #e8e8e8;
+    background-color: #1c90dd;
+    opacity: 8px;
   }
   .menu > li:not(:last-child) {
     border-bottom: 1px solid #444;
@@ -1043,8 +1043,8 @@ h5 {
     width: 100%;
   }
 }
-/*
-@media (max-width: 450px) {
+
+@media (min-width: 450px){
   html {
     font-size: 50%;
     overflow-x: hidden;
@@ -1093,6 +1093,7 @@ h5 {
     padding: 0 1em;
   }
 }
+/*
 @media (max-width: 425px) {
   html {
     font-size: 50%;
