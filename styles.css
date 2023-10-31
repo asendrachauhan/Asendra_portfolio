@@ -725,10 +725,11 @@ section .title {
 }
 
 .card {
-  height: 365px;
+  height: 460px;
   width: 335px;
-  padding: 20px 35px;
-  background-color: rgb(232, 233, 227);
+  /* padding: 20px 35px; */
+  
+  background-color: rgb(22, 220, 161);
   border-radius: 20px;
   margin: 15px;
   position: relative;
@@ -737,21 +738,21 @@ section .title {
   box-shadow: rgb(26 24 24 / 25%) 0px 5px 10px 2px;
 }
 
-.card i {
+/* .card i {
   font-size: 50px;
   display: block;
   text-align: center;
   margin: 25px 0px;
   color: #f9004d;
-}
+} */
 
 h5 {
   color: #195cc8;
   font-size: 23px;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 
-.pra p {
+/* .pra p {
   font-size: 18px;
   line-height: 27px;
   margin-bottom: 25px;
@@ -772,8 +773,17 @@ h5 {
   background-color: transparent;
   border: 2px solid #249f9f;
   cursor: pointer;
+} */
+.pr_img{
+  
+  width: 335px;
 }
-
+.cr{
+  height: 406px;
+}
+.cl{
+  height: auto;
+}
 /* contact me  */
 
 .contact {
