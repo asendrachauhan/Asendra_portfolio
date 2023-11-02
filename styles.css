@@ -33,7 +33,9 @@ html {
 body {
   background-color: #eae4d7;
   margin: 0px;
+
 }
+
 
 /* Styling the header : Navigation Bar */
 
@@ -96,6 +98,7 @@ span {
   border: blue 3px solid;
   border-radius: 6px;
   box-shadow: rgba(71, 217, 220, 0.963) 1px 2px 2px 2px;
+  text-decoration: none;
   font-size: 20px;
   padding-left: 8%;
   padding-right: 8%;
@@ -104,13 +107,17 @@ span {
 .menu li:hover {
   cursor: pointer;
   transform: scale(1.2);
+  text-decoration: none;
+  
 }
+
 
 .menu {
   display: flex;
   justify-content: flex-start;
   flex-direction: row;
   list-style-type: none;
+  text-decoration: none;
   margin: 0;
 }
 
@@ -141,12 +148,13 @@ span {
 .menu-button::before,
 .menu-button::after {
   display: block;
-  background-color: rgb(18, 66, 209); 
+  background-color: rgb(209, 18, 59); 
   position: absolute;
   height: 6px;
   width: 32px;
+  transition: all 1s ease-in 0s;
   border-radius: 4px;
-  color: rgb(0, 1, 8);
+  color: rgb(1, 6, 14);
 }
 
 .menu-button::before {
@@ -168,6 +176,7 @@ span {
 
 #menu-toggle:checked + .menu-button-container .menu-button {
   background: rgba(233, 10, 10, 0);
+  
 }
 
 #menu-toggle:checked + .menu-button-container .menu-button::after {
@@ -201,23 +210,20 @@ span {
 }
 
 .hero .image img {
-  width: 60%;
+  width: 40%;
   
   padding: 1rem;
-  border: #fbca04f7 3px solid;
-  border-radius: 20px 20px 20px 20px;
-  background-color: aquamarine;
   
-  box-shadow: rgba(86, 207, 209, 1) 0px 0px 3px  3px;
-  animation: float 3s ;
+  
+  background: linear-gradient(blue,red,green,rgb(28, 172, 191));
+  clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+   box-shadow: rgba(86, 207, 209, 1) 0px 0px 3px  3px; 
+   transition: all 2s ease-in-out 0s;
 }
 .hero .image img:hover{
-  background-color: rgb(149, 170, 221);
-  border: #f9f7f7f7 3px solid;
-  box-shadow: rgba(93, 98, 195, 0.963) 0px 0px 3px 3px;
-  
+  background: linear-gradient(rgb(11, 204, 91),rgb(34, 8, 235),rgb(205, 14, 14),rgb(28, 28, 191));
   transform: scale(1.2);  
-  transition: all 1s ease-in 0s;
+  transition: all 2s ease-in-out 0s;
 }
 
 /* animating the main image   */
@@ -225,11 +231,9 @@ span {
 @keyframes float {
   0%,
   100% {
-    transform: scale(1.2)
+    transform: scale(1.1)
   }
-  50% {
-    transform: translateY(3rem);
-  }
+  
 }
 
 /* Styling the buttons for the hero and about section */
@@ -268,6 +272,9 @@ button:hover {
   cursor: pointer;
   border-color: rgb(16, 55, 229);
   box-shadow: none;
+}
+button:active{
+  transform: scale(0.8);
 }
 
 /* herocontent hero section */
@@ -1010,7 +1017,10 @@ h5 {
     z-index: 2;
   }
   .menu li:hover {
-    transform: scale(1);
+    transition: all 2s ease-in 0s;
+    transform: scale(1.2);
+    border-radius: 20px;
+    text-decoration: none;
   }
   #menu-toggle ~ .menu li {
     height: 0;
@@ -1029,9 +1039,10 @@ h5 {
     margin: 0;
     padding: 0.5em 0;
     width: 100%;
+    text-decoration: none;
     color: black;
-    background-color: #1c90dd;
-    opacity: 8px;
+    background-color: #b5bec3;
+    
   }
   .menu > li:not(:last-child) {
     border-bottom: 1px solid #444;
@@ -1086,9 +1097,13 @@ h5 {
     align-items: center;
     padding: 2rem;
     z-index: 2;
+    
   }
   .menu li:hover {
-    transform: scale(1);
+    transform: scale(1.2);
+    transition: all 2s ease-in 0s;
+    border-radius: 20px;
+    text-decoration: none;
   }
   #menu-toggle ~ .menu li {
     height: 0;
@@ -1108,8 +1123,9 @@ h5 {
     padding: 0.5em 0;
     width: 100%;
     color: black;
-    background-color: #1c90dd;
-    opacity: 8px;
+    background-color: #959ca1;
+    transition: all 2s ease-in 0s;
+    
   }
   .menu > li:not(:last-child) {
     border-bottom: 1px solid #444;
