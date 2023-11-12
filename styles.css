@@ -61,7 +61,7 @@ section {
   font-size: 1.5rem;
   font-weight: bolder;
   display: inline-block;
-  
+
 }
 
 .logo i {
@@ -74,8 +74,8 @@ section {
   letter-spacing: 1px;
   cursor: pointer;
   color: #dedede;
-  
-  
+
+
 }
 
 span {
@@ -108,7 +108,7 @@ span {
   cursor: pointer;
   transform: scale(1.2);
   text-decoration: none;
-  
+
 }
 
 
@@ -121,7 +121,7 @@ span {
   margin: 0;
 }
 
-.menu > li {
+.menu>li {
   margin: 0 1rem;
   overflow: hidden;
 }
@@ -148,7 +148,7 @@ span {
 .menu-button::before,
 .menu-button::after {
   display: block;
-  background-color: rgb(209, 18, 59); 
+  background-color: rgb(209, 18, 59);
   position: absolute;
   height: 6px;
   width: 32px;
@@ -169,17 +169,17 @@ span {
 
 /*  Adding Functionality to the Hamburger Menu with CSS  */
 
-#menu-toggle:checked + .menu-button-container .menu-button::before {
+#menu-toggle:checked+.menu-button-container .menu-button::before {
   margin-top: 0px;
   transform: rotate(45deg);
 }
 
-#menu-toggle:checked + .menu-button-container .menu-button {
+#menu-toggle:checked+.menu-button-container .menu-button {
   background: rgba(233, 10, 10, 0);
-  
+
 }
 
-#menu-toggle:checked + .menu-button-container .menu-button::after {
+#menu-toggle:checked+.menu-button-container .menu-button::after {
   margin-top: 0px;
   /*  transforms the hamburger icon into a cross  */
   transform: rotate(-45deg);
@@ -199,41 +199,54 @@ span {
 /* Styling the hero image */
 
 
- .hero .back img{
+.hero .back img {
   width: 400%;
 
 }
 
 .hero .image {
   flex: 1 1 30rem;
- 
+
 }
 
 .hero .image img {
-  width: 40%;
-  
-  padding: 1rem;
-  
-  
-  background: linear-gradient(blue,red,green,rgb(28, 172, 191));
-  clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
-   box-shadow: rgba(86, 207, 209, 1) 0px 0px 3px  3px; 
-   transition: all 2s ease-in-out 0s;
-}
-.hero .image img:hover{
-  background: linear-gradient(rgb(11, 204, 91),rgb(34, 8, 235),rgb(205, 14, 14),rgb(28, 28, 191));
-  transform: scale(1.2);  
-  transition: all 2s ease-in-out 0s;
-}
+  width: 60%;
 
+  padding: 1rem;
+
+  animation: bg 2s linear 0s infinite alternate;
+  clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+  box-shadow: rgba(86, 207, 209, 1) 0px 0px 3px 3px;
+  
+}
 /* animating the main image   */
 
-@keyframes float {
-  0%,
-  100% {
-    transform: scale(1.1)
+@keyframes bg {
+  0% {
+    background: linear-gradient(rgb(11, 204, 91), rgb(34, 8, 235), rgb(205, 14, 14), rgb(28, 28, 191));
   }
-  
+
+  20% {
+    background: linear-gradient(rgb(11, 34, 204), rgb(235, 8, 53), rgb(14, 192, 205), rgb(28, 191, 110));
+  }
+
+  40% {
+    background: linear-gradient(rgb(204, 43, 11), rgb(8, 61, 235), rgba(192, 205, 14, 0.897), rgb(191, 72, 28));
+  }
+
+  60% {
+    background: linear-gradient(rgb(11, 204, 143), rgb(235, 8, 8), rgb(14, 148, 205), rgb(28, 44, 191));
+  }
+
+  80% {
+    background: linear-gradient(rgb(204, 11, 59), rgb(235, 114, 8), rgb(62, 14, 205), rgb(12, 163, 42));
+  }
+
+  100% {
+    background: linear-gradient(rgb(43, 11, 204), rgb(224, 235, 8), rgb(205, 14, 17), rgb(28, 172, 191));
+  }
+
+
 }
 
 /* Styling the buttons for the hero and about section */
@@ -250,14 +263,15 @@ button {
   margin: 10px;
   transition: 0.4s;
   box-shadow: rgba(93, 183, 183, 0.963) 0px 0px 2px 2px;
-  
+
 }
 
 .btn1,
 .btn2 {
   margin: 1rem;
 }
-.rebt{
+
+.rebt {
   color: #111;
 }
 
@@ -273,7 +287,8 @@ button:hover {
   border-color: rgb(16, 55, 229);
   box-shadow: none;
 }
-button:active{
+
+button:active {
   transform: scale(0.8);
 }
 
@@ -341,7 +356,8 @@ h3 {
   border-radius: 30px;
   box-shadow: rgba(26, 24, 24, 0.25) 0px 5px 10px 2px;
 }
-.about img:hover{
+
+.about img:hover {
   box-shadow: rgba(33, 7, 233, 0.25) 10px 10px 10px 10px;
   border-bottom-left-radius: 100px;
   border-top-right-radius: 100px;
@@ -541,6 +557,7 @@ section .title {
 .skills-content .right .python:before {
   width: 70%;
 }
+
 .skills-content .right .android:before {
   width: 75%;
 }
@@ -686,11 +703,11 @@ section .title {
   padding: 10px 0px;
   height: 100vh;
 } */
-.item img{
+.item img {
   height: 100vh;
   width: 100vw;
-  
-  
+
+
 }
 
 
@@ -735,7 +752,7 @@ section .title {
   height: 460px;
   width: 335px;
   /* padding: 20px 35px; */
-  
+
   background-color: rgb(22, 220, 161);
   border-radius: 20px;
   margin: 15px;
@@ -781,21 +798,24 @@ h5 {
   border: 2px solid #249f9f;
   cursor: pointer;
 } */
-.pr_img{
-  
+.pr_img {
+
   width: 335px;
 }
-.cr{
+
+.cr {
   height: 406px;
 }
-.cl{
+
+.cl {
   height: auto;
 }
+
 /* contact me  */
 
 .contact {
   height: 100vh;
- 
+
 }
 
 .contactUs {
@@ -911,24 +931,24 @@ h5 {
 #lab_social_icon_footer {
   /* align-items: center; */
   /* justify-content: center; */
-   background-color: #353434; 
-   text-align: center; 
+  background-color: #353434;
+  text-align: center;
 }
 
 #lab_social_icon_footer .social {
   color: hsl(0, 0%, 100%);
   font-size: 20px;
-  
-  
+
+
 }
 
- /*#lab_social_icon_footer:hover {
+/*#lab_social_icon_footer:hover {
   transform: scale(1.2);
 } */
 /* .si.icon1:hover {
   transform: scale(5.2);
 } */
-.icon1{
+.icon1 {
   padding: 15px;
   margin: 5px;
   color: #195cc8;
@@ -936,7 +956,8 @@ h5 {
   border: 5px solid none;
   border-radius: 8px;
 }
-.icon2{
+
+.icon2 {
   padding: 15px;
   margin: 5px;
   color: #195cc8;
@@ -944,7 +965,8 @@ h5 {
   border: 1px solid none;
   border-radius: 8px;
 }
-.icon3{
+
+.icon3 {
   padding: 15px;
   margin: 5px;
   color: #195cc8;
@@ -952,7 +974,8 @@ h5 {
   border: 5px solid none;
   border-radius: 8px;
 }
-.icon4{
+
+.icon4 {
   padding: 15px;
   margin: 5px;
   color: #195cc8;
@@ -960,7 +983,8 @@ h5 {
   border: 5px solid none;
   border-radius: 8px;
 }
-.icon5{
+
+.icon5 {
   padding: 15px;
   margin: 5px;
   color: #195cc8;
@@ -978,7 +1002,7 @@ h5 {
   align-items: center;
   justify-content: center;
   text-align: center;
-  
+
 
   font-weight: bold;
 }
@@ -989,8 +1013,12 @@ h5 {
   html {
     font-size: 55%;
   }
+
   header {
     padding: 2rem;
+  }
+  .hero .image img{
+    width: 70%;
   }
   section {
     padding: 2rem;
@@ -1001,9 +1029,14 @@ h5 {
   .menu-button-container {
     display: flex;
   }
+  .hero .image img{
+    width: 70%;
+  }
+
   a {
     color: black;
   }
+
   .menu {
     position: absolute;
     top: 0;
@@ -1016,24 +1049,28 @@ h5 {
     padding: 2rem;
     z-index: 2;
   }
+
   .menu li:hover {
     transition: all 2s ease-in 0s;
     transform: scale(1.2);
     border-radius: 20px;
     text-decoration: none;
   }
-  #menu-toggle ~ .menu li {
+
+  #menu-toggle~.menu li {
     height: 0;
     margin: 0;
     padding: 0;
     border: 0;
   }
-  #menu-toggle:checked ~ .menu li {
+
+  #menu-toggle:checked~.menu li {
     border: 1px solid #9f9a9a;
     height: 2.5em;
     padding: 0.5em;
   }
-  .menu > li {
+
+  .menu>li {
     display: flex;
     justify-content: center;
     margin: 0;
@@ -1042,50 +1079,64 @@ h5 {
     text-decoration: none;
     color: black;
     background-color: #b5bec3;
-    
+
   }
-  .menu > li:not(:last-child) {
+
+  .menu>li:not(:last-child) {
     border-bottom: 1px solid #444;
   }
+
   .contact-box {
     grid-template-columns: 1fr;
   }
+
   .contactLeft {
     height: 100%;
   }
+
   .about img {
     display: none;
   }
+
   html {
     font-size: 50%;
     overflow-x: hidden;
     overflow-y: scroll;
   }
+
   .main {
     width: 100%;
   }
+
   .box {
     display: block;
   }
+
   .card {
     margin: 15px auto;
   }
+
   .service {
     height: fit-content;
   }
+
   .contact {
     height: fit-content;
   }
 }
 
 @media (max-width: 768px) {
-  
+
   .menu-button-container {
     display: flex;
+  }
+  .hero .image img{
+    width: 50%;
   }
   a {
     color: black;
   }
+
   .menu {
     position: absolute;
     top: 0;
@@ -1097,26 +1148,30 @@ h5 {
     align-items: center;
     padding: 2rem;
     z-index: 2;
-    
+
   }
+
   .menu li:hover {
     transform: scale(1.2);
     transition: all 2s ease-in 0s;
     border-radius: 20px;
     text-decoration: none;
   }
-  #menu-toggle ~ .menu li {
+
+  #menu-toggle~.menu li {
     height: 0;
     margin: 0;
     padding: 0;
     border: 0;
   }
-  #menu-toggle:checked ~ .menu li {
+
+  #menu-toggle:checked~.menu li {
     border: 1px solid #9f9a9a;
     height: 2.5em;
     padding: 0.5em;
   }
-  .menu > li {
+
+  .menu>li {
     display: flex;
     justify-content: center;
     margin: 0;
@@ -1125,20 +1180,22 @@ h5 {
     color: black;
     background-color: #959ca1;
     transition: all 2s ease-in 0s;
-    
+
   }
-  .menu > li:not(:last-child) {
+
+  .menu>li:not(:last-child) {
     border-bottom: 1px solid #444;
   }
+
   .logo i {
     color: white;
   }
+
   .about img {
     display: none;
   }
+
   .main {
     width: 100%;
   }
 }
-
-
