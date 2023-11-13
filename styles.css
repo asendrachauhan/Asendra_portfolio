@@ -103,15 +103,21 @@ span {
   padding-left: 8%;
   padding-right: 8%;
 }
-
 .menu li:hover {
   cursor: pointer;
-  transform: scale(1.2);
+}
+
+.menu li:active {
+  cursor: pointer;
+  transition: all 2s ease-in 0s;
+  transform: scale(1.4);
   text-decoration: none;
 
 }
 
-
+.menu li{
+  transition: all 2s ease-in 0s;
+}
 .menu {
   display: flex;
   justify-content: flex-start;
@@ -124,6 +130,7 @@ span {
 .menu>li {
   margin: 0 1rem;
   overflow: hidden;
+  transition: all 2s ease-in 0s;
 }
 
 /*Container for menu button  */
@@ -1050,7 +1057,7 @@ h5 {
     z-index: 2;
   }
 
-  .menu li:hover {
+  .menu li:active {
     transition: all 2s ease-in 0s;
     transform: scale(1.2);
     border-radius: 20px;
@@ -1151,7 +1158,7 @@ h5 {
 
   }
 
-  .menu li:hover {
+  .menu li:active {
     transform: scale(1.2);
     transition: all 2s ease-in 0s;
     border-radius: 20px;
